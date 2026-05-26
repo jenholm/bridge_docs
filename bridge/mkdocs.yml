@@ -19,9 +19,9 @@ nav:
       - User Guide: user/index.md
       - Report Users: user/report-users.md
       - Dev Users: user/dev-users.md
+      - Admin Users: user/admin-users.md
   - Admin:
       - Admin Guide: admin/index.md
-      - Admin Users: admin/admin-users.md
       - Common Admin Tasks: admin/common-admin-tasks.md
   - Developer:
       - Developer Guide: developer/index.md

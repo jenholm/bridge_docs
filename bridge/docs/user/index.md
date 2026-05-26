@@ -2,40 +2,125 @@
 
 This section is for people who use Bridge through the web interface and do not need to know how the app is implemented.
 
-Bridge has three active user security levels in the front end.
+Bridge has three active user security levels in the front end:
 
 1. Report users
+2. Dev users
+3. Admin users
+
+Each role sees a different set of pages and tools in the Bridge navigation bar.
+
+## Choose your guide
+
+### Role and security overview
+
+Use this page if you need to understand the difference between `user`, `dev`, `admin`, and `suspend` access levels.
+
+[Go to the role and security overview](security-roles.md)
+
+### Report users
+
+Use this page if you mainly log in, open **Reports**, and read finished output.
+
+[Go to the report user guide](report-users.md)
+
+### Dev users
+
+Use this page if you build, save, schedule, and test reports through **Model Maintenance**.
+
+[Go to the dev user guide](dev-users.md)
+
+### Admin users
+
+Use this page if you manage accounts, roles, report access, table access, resource usage, and containers.
+
+[Go to the admin user guide](admin-users.md)
+
+## Role overview
+
+### Report users
+
+Report users are usually:
+
 - business users
 - analysts
 - report consumers
-- anyone who mainly logs in, opens Reports, and reads the finished output
+- people who mainly log in, open **Reports**, and read finished output
 
-2. Dev users
-- report authors using the web UI
-- users who build, save, schedule, and test reports through Model Maintenance
-- users who may also view their own finished reports
+Report users normally see:
 
-3. Admin users
-- users who manage accounts, roles, report access, table access, resources, and containers
-- admins can also use the dev and report-user screens
+- Account
+- Reports
+- Logout
 
-Choose the page that matches how you use Bridge:
-- `security-roles.md` - role and permission overview for user, dev, admin, and suspended accounts
-- `report-users.md` - simple instructions for users who only need to open and read reports
-- `dev-users.md` - detailed front-end instructions for users who build and manage reports
-- `../admin/admin-users.md` - detailed front-end instructions for administrators
+### Dev users
 
-Common tasks for all users
-- Sign in from the home page
-- Go to Account after login
-- Use the navigation bar to open the pages available to your role
-- Use Logout when finished
+Dev users are report authors who use the Bridge web UI to build and manage reports.
 
-Navigation differences by role
-- report users normally see: Account, Reports, Logout
-- dev users normally see: Account, Reports, Model Maintenance, Scheduled Runs, Logout
-- admin users normally see all dev-user items plus User Admin, User Resource Usage, and Container Control
+Dev users normally see:
 
-Password reset
-- If you cannot sign in, use the password reset link/flow provided by the site.
-- The reset screens ask for your email address, then let you create a new password from the link sent to you.
+- Account
+- Reports
+- Model Maintenance
+- Scheduled Runs
+- Logout
+
+Dev users can:
+
+- upload report scripts
+- build reports from database tables
+- upload finished HTML reports
+- schedule recurring report runs
+- view their own finished reports
+
+### Admin users
+
+Admin users manage the operational side of Bridge.
+
+Admin users can:
+
+- manage user accounts
+- change user roles
+- assign report access
+- assign table access
+- review resource usage
+- stop or remove report containers
+
+Admin users normally see all dev-user navigation items plus:
+
+- User Admin
+- User Resource Usage
+- Container Control
+
+## Common tasks for all users
+
+Most users follow the same basic starting flow:
+
+1. Sign in from the Bridge home page.
+2. Go to **Account** after login.
+3. Use the navigation bar to open the pages available to your role.
+4. Use **Logout** when finished.
+
+## Navigation differences by role
+
+Bridge changes the navigation bar based on the signed-in user's role.
+
+| Role | Typical navigation |
+|---|---|
+| Report user | Account, Reports, Logout |
+| Dev user | Account, Reports, Model Maintenance, Scheduled Runs, Logout |
+| Admin user | Account, Reports, Model Maintenance, Scheduled Runs, User Admin, User Resource Usage, Container Control, Logout |
+
+## Password reset
+
+If you cannot sign in, use the password reset flow provided by the site.
+
+The reset process usually works like this:
+
+1. Open the password reset page.
+2. Enter your email address.
+3. Check your email for the reset link.
+4. Open the link.
+5. Create a new password.
+6. Return to the home page and sign in again.
+```
