@@ -1,0 +1,87 @@
+/*
+  Bridge docs theme overrides.
+
+  Goal:
+  Make the MkDocs Material header/top band look closer to the Bridge Flask app navbar.
+  The Flask app uses a Bootstrap inverse fixed-top navbar:
+  dark background, light nav text, simple horizontal brand-style links.
+*/
+
+/* Main top header */
+.md-header {
+  background-color: #222;
+  color: #f5f5f5;
+  box-shadow: none;
+}
+
+/* Header title / site name */
+.md-header__title {
+  color: #f5f5f5;
+  font-weight: 400;
+}
+
+/* Header buttons/icons */
+.md-header__button {
+  color: #f5f5f5;
+}
+
+/* Search box in header */
+.md-search__form {
+  background-color: #333;
+}
+
+.md-search__input {
+  color: #f5f5f5;
+}
+
+.md-search__input::placeholder {
+  color: #cfcfcf;
+}
+
+/* Tabs/navigation band, if enabled */
+.md-tabs {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+.md-tabs__link {
+  color: #f5f5f5;
+  opacity: 1;
+  font-weight: 400;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  color: #ffffff;
+}
+
+/* MkDocs Material primary color variables */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #222;
+  --md-primary-fg-color--light: #333;
+  --md-primary-fg-color--dark: #111;
+  --md-accent-fg-color: #555;
+}
+
+/* Dark scheme, if you ever enable it */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #222;
+  --md-primary-fg-color--light: #333;
+  --md-primary-fg-color--dark: #111;
+  --md-accent-fg-color: #888;
+}
+
+/* Footer to echo the app's simple footer branding */
+.md-footer {
+  background-color: #222;
+}
+
+.md-footer-meta {
+  background-color: #111;
+}
+
+/* Optional: make the site title feel more like the Bootstrap navbar-brand */
+.md-header__topic:first-child {
+  font-size: 1.05rem;
+  font-weight: 400;
+}

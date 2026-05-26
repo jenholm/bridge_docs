@@ -2,8 +2,13 @@ site_name: Bridge Documentation
 site_url: https://www.enholm.net/bridge/
 site_description: Documentation for the Bridge Flask report automation platform
 
+extra_css:
+  - stylesheets/bridge-theme.css
+
 theme:
   name: material
+  logo: assets/bridge_docs.png
+  favicon: assets/bridge1.ico
   features:
     - navigation.sections
     - navigation.expand
