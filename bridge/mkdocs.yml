@@ -1,0 +1,44 @@
+site_name: Bridge Documentation
+site_url: https://www.enholm.net/bridge/
+site_description: Documentation for the Bridge Flask report automation platform
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Users:
+      - User Guide: user/index.md
+      - Report Users: user/report-users.md
+      - Dev Users: user/dev-users.md
+  - Admin:
+      - Admin Guide: admin/index.md
+      - Admin Users: admin/admin-users.md
+      - Common Admin Tasks: admin/common-admin-tasks.md
+  - Developer:
+      - Developer Guide: developer/index.md
+      - Architecture: developer/architecture.md
+      - Template Reference: developer/template-reference.md
+  - Reference:
+      - Config Reference: reference/config-reference.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
